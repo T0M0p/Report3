@@ -1,5 +1,8 @@
 package jp.ac.uryukyu.e175714;
 
+/**
+ * Created by tnal on 2016/11/13.
+ */
 public class Main {
     public static void main(String[] args){
         Hero hero = new Hero("勇者", 10, 5);
@@ -8,7 +11,7 @@ public class Main {
         System.out.printf("%s vs. %s\n", hero.getname(), enemy.getname());
 
         int turn = 0;
-        while( !hero.isDead() && !enemy.isDead() ){
+        while( hero.isDead() == false && enemy.isDead() == false ){
             turn++;
             System.out.printf("%dターン目開始！\n", turn);
             hero.attack(enemy);
