@@ -24,7 +24,6 @@ public class LivingThing {
     }
 
 
-
     public String getname(){
         return name;
     }
